@@ -9,7 +9,13 @@ names = ["Sara", "Noura", "Lama", "Reem", "Amal", "Lama"]
 def sort_names(names):
     return sorted(names)
 
-
+# Written by: Fatimah (task 4)
+def names_starting_with(names, letter):
+    result = []
+    for name in names:
+        if name.startswith(letter):
+            result.append(name)
+    return result
 # ===== Each student adds her function ABOVE this line =====
 
 def main():
@@ -17,6 +23,6 @@ def main():
     print("Class list:", names)
     # Each student calls her function here, for example:
     # print("Number of names:", count_names(names))
-    print("Sorted names:", sort_names(names))
-
+    print("Sorted names:", sort_names(names))     
+    print("Names starting with L:", names_starting_with(names, "L"))
 main()
