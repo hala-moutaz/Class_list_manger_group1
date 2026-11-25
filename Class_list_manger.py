@@ -5,6 +5,10 @@ names = ["Sara", "Noura", "Lama", "Reem", "Amal", "Lama"]
 
 # ===== Each student adds her function BELOW this line =====
 
+# Written by: Hala (task 3)
+def sort_names(names):
+    return sorted(names)
+
 
 # ===== Each student adds her function ABOVE this line =====
 
@@ -13,5 +17,6 @@ def main():
     print("Class list:", names)
     # Each student calls her function here, for example:
     # print("Number of names:", count_names(names))
+    print("Sorted names:", sort_names(names))
 
 main()
