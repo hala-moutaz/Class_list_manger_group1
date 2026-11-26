@@ -10,7 +10,12 @@ def count_names(names):
     for name in names:              # loop: go through every name in the list
         count = count + 1
     return count
-    
+# Written by: Leena (task 3)
+def search_name(names, name):
+    if name in names:
+        return True
+    else:
+        return False    
 # Written by: Hala (task 3)
 def sort_names(names):
     return sorted(names)
@@ -29,6 +34,7 @@ def main():
     print("Class list:", names)
     # Each student calls her function here, for example:
     # print("Number of names:", count_names(names))
+    print("Is Sara in the list?", search_name(names, "Sara"))
     print("Sorted names:", sort_names(names))     
     print("Names starting with L:", names_starting_with(names, "L"))
     print("Number of names:", count_names(names))
