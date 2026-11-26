@@ -10,7 +10,7 @@ def count_names(names):
     for name in names:              # loop: go through every name in the list
         count = count + 1
     return count
-# Written by: Leena (task 3)
+# Written by: Leena (task 2)
 def search_name(names, name):
     if name in names:
         return True
