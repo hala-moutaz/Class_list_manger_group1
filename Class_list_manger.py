@@ -27,6 +27,13 @@ def names_starting_with(names, letter):
         if name.startswith(letter):
             result.append(name)
     return result
+
+# Written by: Rose (task 5)
+def to_upper(names):
+    result = []                     # new list to hold the uppercase names
+    for name in names:              # go through every name in the list
+        result.append(name.upper()) # convert to capital letters and add it
+    return result
 # ===== Each student adds her function ABOVE this line =====
 
 def main():
@@ -38,5 +45,6 @@ def main():
     print("Sorted names:", sort_names(names))     
     print("Names starting with L:", names_starting_with(names, "L"))
     print("Number of names:", count_names(names))
+    print("Uppercase names:", to_upper(names))
 
 main()
